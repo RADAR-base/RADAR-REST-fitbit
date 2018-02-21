@@ -58,7 +58,7 @@ All configuration can be updated by modifying configuration in the config folder
 }
 ```
 
-##Usage
+## Usage
 
 ### Adding a device
 1. Ensure to update the Fitbit client secret, client id, and callback URLs

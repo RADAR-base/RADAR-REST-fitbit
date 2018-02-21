@@ -5,17 +5,17 @@ This application is designed to poll the Fitbit web API and post data to a Kafka
 
 This repository is intended to be configurable using a web API and by updating a local configuration on app start.
 
-##Dependencies
+## Dependencies
 - Node
 - Kafka
 - Zookeeper (for Kafka, this app does not depend on Zookeeper)
 
-##Installation
+## Installation
 1. Install latest version of node from https://nodejs.org
 2. Clone this repository
 3. Run `npm install`
 
-##Configuration
+## Configuration
 
 All configuration can be updated by modifying configuration in the config folder / config.json file
 
@@ -79,8 +79,3 @@ All configuration can be updated by modifying configuration in the config folder
 
 ### Deleting a device
 - Visit the server at `/sources/deactivate?user={ADD FITBIT ID HERE}`
-
-
-
-
-

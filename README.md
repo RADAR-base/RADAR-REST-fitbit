@@ -21,7 +21,7 @@ All configuration can be updated by modifying configuration in the config folder
 
 ```
 {
-	"host": "http://localhost", //updates the location of this app
+	"host": "http://localhost", //updates the hosting location of this app
 	"port": "3000", //updates the port of this app optional
 	"fitbit": {
 		"clientId": "YOUR FITBIT CLIENT ID",

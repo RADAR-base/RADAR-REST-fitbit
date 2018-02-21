@@ -1,5 +1,5 @@
-RADAR-fitbit
-============
+RADAR-REST-fitbit
+=================
 
 This application is designed to poll the Fitbit web API and post data to a Kafka topic.
 

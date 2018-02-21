@@ -1,0 +1,21 @@
+{
+  "name": "radar-fitbit",
+  "version": "1.0.0",
+  "description": "RADAR-fitbit",
+  "main": "src/index.js",
+  "dependencies": {
+    "async-polling": "^0.2.1",
+    "express": "^4.16.2",
+    "fitbit-node": "^2.1.0",
+    "kafka-node": "^2.4.1",
+    "minimist": "^1.2.0",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

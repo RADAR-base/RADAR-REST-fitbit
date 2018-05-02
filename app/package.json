@@ -9,7 +9,8 @@
     "fitbit-node": "^2.1.0",
     "kafka-node": "^2.4.1",
     "minimist": "^1.2.0",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "yaml-js": "^0.2.3"
   },
   "devDependencies": {},
   "scripts": {

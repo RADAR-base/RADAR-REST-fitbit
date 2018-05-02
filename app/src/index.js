@@ -4,16 +4,22 @@ const argv = require('minimist')(process.argv.slice(2)),
 	Datastore = require('nedb'),
 	AsyncPolling = require('async-polling'),
 	FitbitApiClient = require('fitbit-node'),
-	express = require("express");
+	express = require("express"),
+	yaml = require("yaml-js");
 
-var config = JSON.parse(fs.readFileSync("config/config.json"));
+const configLocation = "config/config.yml",
+	dbLocation = "data/sources.db";
+
+var configFile = fs.readFileSync(configLocation);
+var config = yaml.load(configFile);
+console.log(config);
 
 const app = express();
 const fitbitClient = new FitbitApiClient(config.fitbit);
 const hostname = config.host + ((config.port != "") ? ":" + config.port : "");
 
 var db = {};
-db.sources = new Datastore({ filename: 'data/sources.db', autoload: true });
+db.sources = new Datastore({ filename: dbLocation, autoload: true });
 
 var pushKafkaMessage = function(data){
 	console.log(data);

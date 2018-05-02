@@ -1,10 +1,11 @@
 # Build stage
 FROM node:carbon
-WORKDIR /
-COPY /app/package*.json ./
+
+WORKDIR /app	
+COPY /app /app
 RUN npm install -g  
-COPY . .
 
 # Run stage
 EXPOSE 3000 
-CMD [ "npm", "start" ]
+
+CMD ["npm", "start"]

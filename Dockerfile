@@ -1,6 +1,6 @@
 # Build stage
 FROM node:carbon
-WORKDIR /app
+WORKDIR /
 COPY /app/package*.json ./
 RUN npm install -g  
 COPY . .

@@ -1,3 +1,7 @@
+# DEPRECATION NOTICE
+
+This repository is no longer being maintained. Fitbit API data can be collected into Kafka using https://github.com/RADAR-base/RADAR-REST-connector. Fitbit users are registered with https://github.com/RADAR-base/RADAR-Rest-Source-Auth.
+
 RADAR-REST-fitbit
 =================
 
